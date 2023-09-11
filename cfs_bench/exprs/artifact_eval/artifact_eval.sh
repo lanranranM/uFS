@@ -25,10 +25,10 @@ fi
 # a env var that will be exported should have a prefix "AE_" to avoid conflicts
 ## source code repository
 if [ -z "$AE_REPO_URL" ]; then
-	export AE_REPO_URL='https://github.com/WiscADSL/uFS.git'
+	export AE_REPO_URL='https://github.com/lanranranM/uFS.git'
 fi
 if [ -z "$AE_BRANCH" ]; then
-	export AE_BRANCH='main'
+	export AE_BRANCH='mmap'
 fi
 ## benchmark code repository
 if [ -z "$AE_BENCH_REPO_URL" ]; then
