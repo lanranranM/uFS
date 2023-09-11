@@ -19,6 +19,11 @@ add_executable(testDumpToVfs testDumpToVfs.cc testClient_common.h
                              ../../src/util.cc)
 target_link_libraries(testDumpToVfs PUBLIC cfs ${TBB_LIBRARIES} rt)
 
+add_executable(testSimpleMmap testSimpleMmap.cc testClient_common.h
+                              ../../src/util.cc ../../include/util.h)
+target_link_libraries(testSimpleMmap PUBLIC cfs ${TBB_LIBRARIES} rt)
+
+
 configure_file(fstest_large_rw.py fstest_large_rw.py @ONLY)
 configure_file(testCfsVersusVfs.py testCfsVersusVfs.py @ONLY)
 
